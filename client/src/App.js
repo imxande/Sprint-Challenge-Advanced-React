@@ -1,6 +1,6 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 class App extends React.Component{
   constructor(){
@@ -9,6 +9,15 @@ class App extends React.Component{
       players: []
     }
   }
+
+componentDidMount(){
+  axios.get(`http://localhost:5000/api/players`)
+  .then(response => {
+    // console.log(response.data);
+    this.setState({players: response.data})
+    console.log(this.state.players)
+  })
+}
 
   render(){
     return(
