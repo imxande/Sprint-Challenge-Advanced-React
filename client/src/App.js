@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
+import PlayerCard from './PlayerCard';
 
 class App extends React.Component{
   constructor(){
@@ -23,6 +24,7 @@ componentDidMount(){
     return(
       <div>
         <h1>Get Ready player ONE</h1>
+        <PlayerCard player = {this.state.players} />
       </div>
     )
   }
