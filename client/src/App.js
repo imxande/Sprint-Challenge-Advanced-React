@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import PlayerCard from './PlayerCard';
+import Form from './Form';
 
 class App extends React.Component{
   constructor(){
@@ -26,11 +27,10 @@ componentDidMount(){
         <header>
           <h1>Soccer Players</h1>
         </header>
-        
-        <div>
-        <PlayerCard player = {this.state.players} />
-        </div>
-        
+
+        <section>
+          <PlayerCard player = {this.state.players} /> 
+        </section>
       </div>
     )
   }
