@@ -23,8 +23,14 @@ componentDidMount(){
   render(){
     return(
       <div>
-        <h1>Get Ready player ONE</h1>
+        <header>
+          <h1>Soccer Players</h1>
+        </header>
+        
+        <div>
         <PlayerCard player = {this.state.players} />
+        </div>
+        
       </div>
     )
   }
