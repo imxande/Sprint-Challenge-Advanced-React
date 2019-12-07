@@ -5,7 +5,7 @@ function DisplayPlayers(props){
     return(
         <div>
            {props.players.map(item =>(
-               <div key = {item.id}>
+               <div key = {item.id}><hr/>
                    <h1> {item.name} </h1>
                    <p>Country: {item.country} </p>
                    <p>Searches: {item.searches} </p>

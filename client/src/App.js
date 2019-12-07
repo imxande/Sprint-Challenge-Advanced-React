@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import DisplayPlayers from './DisplayPlayers';
+import SearchBar from './SearchBar';
 
 class App extends React.Component{
   constructor(){
@@ -25,6 +26,9 @@ class App extends React.Component{
   render(){
     return(
       <div>
+        <header>
+          <SearchBar />
+        </header>
         <DisplayPlayers players= {this.state.players} />
       </div>
     )
